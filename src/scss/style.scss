@@ -1,0 +1,63 @@
+@import "fonts";
+@import "reset";
+@import "shared";
+@import "header";
+@import "main";
+@import "footer";
+
+body {
+	color: rgb(26, 17, 10);
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "TenorSans", sans-serif;
+}
+
+h2 {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: sans-serif;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	background-color: rgb(232, 220, 208);
+	padding-top: 120px;
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+[class*="__container"] {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.header__container {
+	padding: 0;
+}
+
+a {
+	color: rgb(125, 110, 91);
+}
+
+@media (max-width: 900px) {
+	.wrapper {
+		padding-top: 90px;
+	}
+}
